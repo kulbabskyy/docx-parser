@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DocX Parser</title>
+    <title>Max Script</title>
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
 
@@ -13,26 +13,24 @@
     <script type="text/javascript" src="js/docx.js"></script>
     <script type="text/javascript" src="js/sweetalert.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 
 <body>
-<main>
-    <div id="toolbar">
-        <div id="toolbar-container">
-            <div class="file">
-                <input type="file" id="file" class="inputfile"/>
-                <label for="file">Выбрать файл</label>
-                <span id="filename">Файл не выбран</span>
+    <main>
+        <div id="toolbar">
+            <div id="toolbar-container">
+                <div class="file">
+                    <input type="file" id="file" class="inputfile" />
+                    <label for="file">Выбрать файл</label>
+                    <span id="filename">Файл не выбран</span>                   
+                </div>
+                <div class="convert"><a id="clear" class="button">Очистить</a><input type="button" id="convert" class="button" value="Конвертировать" /></div>
+                
             </div>
-            <div class="convert"><a id="clear" class="button">Очистить</a>
-                <input type="button" id="convert"
-                       class="button" value="Конвертировать"/>
-            </div>
-
         </div>
-    </div>
-    <div id="container"><span class="notConverted">Файл не конвертирован!</span></div>
-</main>
+        <div id="container"><span class="notConverted">Файл не конвертирован</span></div>
+    </main>
 </body>
 
 </html>
